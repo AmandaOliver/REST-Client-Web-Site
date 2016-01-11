@@ -167,34 +167,36 @@
   									</div>
   									<div class="panel-body">
    										<p class="text-center" id="contenido4"></p>
-   										<p class="text-center">Nombre:</p> 
-   										<input class="center-block" type='text' id='nombre_nuevo'><br><br>
-										<p class="text-center">Primer apellido:</p> 
-										<input class="center-block" type='text' id='apellido1_nuevo'><br><br>
-										<p class="text-center">Segundo apellido:</p> 
-										<input class="center-block" type='text' id='apellido2_nuevo'><br><br>
-										<p class="text-center">Tema del TFG:</p> 
-										<input class="center-block" type='text' id='tema_nuevo'><br><br>
-										<p class="text-center">Director del TFG:</p> 
-										<input class="center-block" type='text' id='director_nuevo'><br><br>
-										<p class="text-center">Co-director del TFG:</p>
-										<input class="center-block" type='text' id='co-director_nuevo'><br><br>
-										<p class="text-center">Estado del TFG:</p> 
-										<ul class="text-center">
-											<li> 
-												<input class="text-center" type='radio' name='estado' id="estado" value="PRESENTADO"> Presentado
-											</li>
-											<li>
-												<input class="text-center" type='radio' name='estado' id="estado" value="ENDESARROLLO"> En Desarrollo
-											</li> 
-										</ul><br><br>
-										<p class="text-center">Fecha de presentación:</p> 
-										<input class="center-block" type='date' id='fecha_nuevo'><br><br>
-										<p class="text-center">Calificación:</p> 
-										<input class="center-block" type='number' id='calificacion_nuevo'><br><br>
-										<p class="text-center">Correo electrónico:</p> 
-										<input class="center-block" type="email" id='correo'><br><br>
-										<button  class="btn btn-default center-block" onClick='nuevoEstudianteJSON()'>Añadir el estudiante</button>	
+   										<form name = "nuevo" onsubmit='return validarFormulario(this)'>
+	   										<p class="text-center">Nombre:</p> 
+	   										<input class="center-block" name='nombre' type='text' id='nombre_nuevo'><br><br>
+											<p class="text-center">Primer apellido:</p> 
+											<input class="center-block" name="apellido1" type='text' id='apellido1_nuevo'><br><br>
+											<p class="text-center">Segundo apellido:</p> 
+											<input class="center-block" type='text' id='apellido2_nuevo'><br><br>
+											<p class="text-center">Tema del TFG:</p> 
+											<input class="center-block" type='text' id='tema_nuevo'><br><br>
+											<p class="text-center">Director del TFG:</p> 
+											<input class="center-block" type='text' id='director_nuevo'><br><br>
+											<p class="text-center">Co-director del TFG:</p>
+											<input class="center-block" type='text' id='co-director_nuevo'><br><br>
+											<p class="text-center">Estado del TFG:</p> 
+											<ul class="text-center">
+												<li> 
+													<input class="text-center" type='radio' name='estado' id="estado" value="PRESENTADO"> Presentado
+												</li>
+												<li>
+													<input class="text-center" type='radio' name='estado' id="estado" value="ENDESARROLLO"> En Desarrollo
+												</li> 
+											</ul><br><br>
+											<p class="text-center">Fecha de presentación:</p> 
+											<input class="center-block" type='date' id='fecha_nuevo'><br><br>
+											<p class="text-center">Calificación:</p> 
+											<input class="center-block" type='number' id='calificacion_nuevo'><br><br>
+											<p class="text-center">Correo electrónico:</p> 
+											<input class="center-block" type="email" id='correo'><br><br>
+											<input type="submit" value="Añadir el estudiante" class="btn btn-default center-block" onclick='nuevoEstudianteJSON()'>	
+  									</form>
   									</div>
 								</div>	
 								
